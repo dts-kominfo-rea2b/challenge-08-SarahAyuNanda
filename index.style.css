@@ -1,0 +1,64 @@
+:root {
+  --primary-dark: #261C2C;
+  --primary-medium: #3E2C41;
+  --primary-light: #5C527F;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  color: var(--primary-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h3 {
+  color: var(--primary-medium);
+  font-weight: 400;
+}
+
+#todo-output {
+  padding: 0;
+  text-align: left;
+  list-style-type: none;
+}
+
+li {
+  padding: 16px 32px;
+  margin: 10px 0;
+  font-size: 14px;
+  width: 100%;
+  background-color: var(--white) ;
+  box-shadow: rgba(92, 82, 127, 0.1) 0px 8px 24px;
+}
+
+#todo-input {
+  padding: 14px;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+#todo-submit {
+  padding: 16px 32px;
+  border-radius: 2px;
+  border: none;
+  background-color: var(--primary-medium);
+  color: var(--white);
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#todo-submit:hover {
+  background-color: var(--primary-dark);
+}
+
+#todo-submit:active {
+  background-color: var(--primary-light);
+}
